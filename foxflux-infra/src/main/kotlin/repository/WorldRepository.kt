@@ -34,7 +34,7 @@ class WorldRepository: IWorldRepository {
         //Потом
     }
 
-    override fun getAll(world: World): Set<World> {
+    override fun getAll(): Set<World> {
         return _worlds
     }
 

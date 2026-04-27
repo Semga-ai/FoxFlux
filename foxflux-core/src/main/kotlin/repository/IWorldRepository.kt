@@ -8,7 +8,7 @@ interface IWorldRepository {
     fun contains(world: World): Boolean
     fun get(world: World): World?
     fun saveAll()
-    fun getAll(world: World): Set<World>
+    fun getAll(): Set<World>
     fun isEmpty(): Boolean
     fun loadFromDisk()
 }

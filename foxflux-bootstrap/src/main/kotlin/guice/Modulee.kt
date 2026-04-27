@@ -10,5 +10,6 @@ class Modulee : AbstractModule() {
         bind(IWorldRepository::class.java).to(WorldRepository::class.java)
         bind(DiscardHandler::class.java)
         bind(NettyServer::class.java).`in`(Scopes.SINGLETON)
+        bind(TickEngine::class.java).`in`(Scopes.SINGLETON)
     }
 }
