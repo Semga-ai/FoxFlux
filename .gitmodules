@@ -1,0 +1,3 @@
+[submodule "kt-mc-packet"]
+	path = kt-mc-packet
+	url = https://github.com/DevSrSouza/kt-mc-packet.git
