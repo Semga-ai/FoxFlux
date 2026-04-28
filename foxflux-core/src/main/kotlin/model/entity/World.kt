@@ -1,12 +1,12 @@
 package model.entity
 
 import events.Tick
-import other.Event
+import other.IAbstractEvent
 import java.util.Queue
 import java.util.concurrent.ConcurrentLinkedQueue
 
 data class World (
-    var events_queue: Queue<Event> = ConcurrentLinkedQueue()
+    var events_queue: Queue<IAbstractEvent> = ConcurrentLinkedQueue()
 ) : Tick {
     override fun tick() {
         events_queue.forEach {e ->
@@ -14,7 +14,7 @@ data class World (
             events_queue.remove(e)
         }
     }
-    fun addEvent(event: Event) {
+    fun addEvent(event: IAbstractEvent) {
         events_queue.add(event)
     }
 }

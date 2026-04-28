@@ -2,8 +2,6 @@ package org.example.guice
 
 import com.google.inject.AbstractModule
 import com.google.inject.Scopes
-import pipeline.MinecraftDecoderHandler
-import pipeline.MinecraftPacketHandler
 import repository.IWorldRepository
 import repository.WorldRepository
 

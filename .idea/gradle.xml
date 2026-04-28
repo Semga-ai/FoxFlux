@@ -13,6 +13,7 @@
             <option value="$PROJECT_DIR$/foxflux-bootstrap" />
             <option value="$PROJECT_DIR$/foxflux-core" />
             <option value="$PROJECT_DIR$/foxflux-infra" />
+            <option value="$PROJECT_DIR$/foxflux-protocol" />
           </set>
         </option>
       </GradleProjectSettings>

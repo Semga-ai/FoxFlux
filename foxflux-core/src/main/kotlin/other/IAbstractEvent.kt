@@ -1,5 +1,5 @@
 package other
 
-interface Event {
+interface IAbstractEvent {
     fun onTick()
 }
