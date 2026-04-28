@@ -10,3 +10,9 @@
 
 
 FoxFlux - High-performance engine based on Netty.
+
+```text
+      /\_/\
+    =( °.° )=  < The engine is under development, documentation will be written later <3
+      > ^ <
+```
