@@ -6,7 +6,7 @@
   ██║     ╚██████╔╝██╔╝ ██╗██║     ███████╗╚██████╔╝██╔╝ ██╗
   ╚═╝      ╚═════╝ ╚═╝  ╚═╝╚═╝     ╚══════╝ ╚═════╝ ╚═╝  ╚═╝
 ```
-#High-performance ecs network engine based on Netty
+# High-performance ecs network engine based on Netty
 
 ATTENTION! This project is not intended for general use. It does not compete with Paper, Spigot, or similar engines! The project will not be brought to the level of the above-mentioned engines, and its functionality will be limited! Use at your own risk.
 
