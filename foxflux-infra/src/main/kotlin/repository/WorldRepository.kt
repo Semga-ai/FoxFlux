@@ -1,20 +1,20 @@
 package repository
 
-import exeption.RepositoryExeption
+import exception.RepositoryException
 import model.entity.World
 
 class WorldRepository: IWorldRepository {
     var _worlds: MutableSet<World> = mutableSetOf()
     override fun add(world: World) {
         if (_worlds.contains(world)) {
-            throw RepositoryExeption("World already exists")
+            throw RepositoryException("World already exists")
         }
         _worlds.add(world)
     }
 
     override fun remove(world: World) {
         if (!_worlds.contains(world)) {
-            throw RepositoryExeption("World does not exist")
+            throw RepositoryException("World does not exist")
         }
         _worlds.remove(world)
     }
@@ -25,7 +25,7 @@ class WorldRepository: IWorldRepository {
 
     override fun get(world: World): World? {
         if (!_worlds.contains(world)) {
-            throw RepositoryExeption("World does not exist")
+            throw RepositoryException("World does not exist")
         }
         return _worlds.firstOrNull { it == world }
     }

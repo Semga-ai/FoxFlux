@@ -11,12 +11,8 @@ repositories {
 
 dependencies {
     testImplementation(kotlin("test"))
-    implementation(project(":foxflux-app"))
-    implementation(project(":foxflux-infra"))
-    implementation(project(":foxflux-core"))
     implementation(project(":foxflux-protocol"))
-    implementation(project(":foxflux-packets"))
-    implementation("com.google.inject:guice:7.0.0")
+    implementation("io.netty:netty-all:4.1.110.Final")
 }
 
 kotlin {

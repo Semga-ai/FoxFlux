@@ -1,11 +1,11 @@
-import kotlin.enums.EnumEntries
-import kotlin.reflect.KClass
+import java.util.UUID
 
 data class Client(
-    val state: EnumEntries<ConnectionStates> = ConnectionStates.entries,
-    val registry: PacketRegistry
+    var state: ConnectionStates = ConnectionStates.NONE,
+    var registry: PacketRegistry,
+    var uuid: UUID? = null
 ) {
-    fun ping(id: Int): KClass<out IAbstractPacket>? {
+    fun ping(id: Int): IAbstractPacket? {
         return registry.packetList.get(PacketData(id,state))
     }
 }

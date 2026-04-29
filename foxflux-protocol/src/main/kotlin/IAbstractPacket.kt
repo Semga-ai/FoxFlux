@@ -1,3 +1,5 @@
+import io.netty.buffer.ByteBuf
+
 interface IAbstractPacket {
-    fun decode(): Any?
+    fun trigger(client: Client,byteBuf: ByteBuf)
 }

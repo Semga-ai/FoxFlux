@@ -1,9 +1,7 @@
-import kotlin.reflect.KClass
-
 class PacketRegistry {
-    val packetList: MutableMap<PacketData, KClass<out IAbstractPacket>> = mutableMapOf()
+    val packetList: MutableMap<PacketData,IAbstractPacket> = mutableMapOf()
 
-    fun registryPacket(packet: KClass<out IAbstractPacket>, data: PacketData) {
+    fun registryPacket(packet: IAbstractPacket, data: PacketData) {
         packetList.put(data,packet)
     }
 }

@@ -18,6 +18,7 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-core:1.6.2")
     implementation(project(":foxflux-app"))
     implementation(project(":foxflux-core"))
+    implementation(project(":foxflux-protocol"))
     implementation("ch.qos.logback:logback-classic:1.5.6")
 }
 
