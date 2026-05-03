@@ -19,7 +19,6 @@ dependencies {
     implementation(project(":foxflux-app"))
     implementation(project(":foxflux-core"))
     implementation(project(":foxflux-protocol"))
-    implementation("ch.qos.logback:logback-classic:1.5.6")
 }
 
 kotlin {

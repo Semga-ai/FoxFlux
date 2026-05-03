@@ -17,6 +17,9 @@ dependencies {
     implementation("com.google.inject:guice:7.0.0")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-core:1.6.2")
     implementation("ch.qos.logback:logback-classic:1.5.6")
+
+    implementation(project(":foxflux-app"))
+    implementation(project(":foxflux-core"))
 }
 
 kotlin {

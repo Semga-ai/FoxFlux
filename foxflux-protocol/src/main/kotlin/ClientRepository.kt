@@ -19,4 +19,7 @@ class ClientRepository {
     fun get(id: UUID): Client? {
         return data.entries.firstOrNull { it.value.uuid == id }?.value
     }
+    fun get(client: Client): ChannelHandlerContext? {
+        return data.entries.firstOrNull { it.value == client }?.key
+    }
 }

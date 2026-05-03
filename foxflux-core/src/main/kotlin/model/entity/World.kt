@@ -1,7 +1,7 @@
 package model.entity
 
 import events.Tick
-import other.IAbstractEvent
+import IAbstractEvent
 import java.util.Queue
 import java.util.concurrent.ConcurrentLinkedQueue
 

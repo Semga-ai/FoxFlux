@@ -15,7 +15,7 @@ class PacketIndefiticator(val clientRepository: ClientRepository, val packetRegi
         if (m.readableBytes() < 1) return
         val id = ProtocolUtils.readVarInt(m)
         if (!clientRepository.contain(ctx)) {
-            clientRepository.add(ctx, Client(ConnectionStates.NONE,packetRegistry,null))
+            clientRepository.add(ctx, Client(ClientStates.NONE,packetRegistry,null,clientRepository))
         }
         val client: Client = clientRepository.get(ctx) ?: throw PipelineException("Client not found")
         val packet: IAbstractPacket = client.ping(id) ?: throw PipelineException("Registered package $id not found!")
